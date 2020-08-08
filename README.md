@@ -1,3 +1,5 @@
+A front-end application which would help users list and browse all launches by SpaceX program.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
