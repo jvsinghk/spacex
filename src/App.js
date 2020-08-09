@@ -47,7 +47,7 @@ class App extends Component {
 
   updateApiFilters(type, value) {
     // if same value is clicked, we remove that filter
-    if ( this.state.filters[type] === value ) {
+    if (this.state.filters[type] === value) {
       value = undefined;
     }
 
@@ -58,7 +58,7 @@ class App extends Component {
 
     this.fetchAPI(filters);
   }
- 
+
 
   render() {
 
@@ -81,56 +81,63 @@ class App extends Component {
               <Col xs={12} sm={12} md={6} lg={3}>
                 <Card style={{ width: '18rem' }}>
                   <Card.Body>
-                    <Card.Title>Filters</Card.Title>
-                    <Card.Text className="header text-center">
+                    <Card.Title className="App-filter-header">Filters</Card.Title>
+                    <Card.Text className="App-filter-heading-launch-year">
                       Launch Year
-                      <hr />
+                      <hr className="App-filters-hr" />
                     </Card.Text>
 
-                    {uniqueLaunchYears.map(year => {
-                      return <Button 
-                        variant={ this.state.filters.launch_year === year.toString() ? "success" : "outline-success"} 
-                        value={year} 
-                        onClick={e => this.updateApiFilters('launch_year', e.target.value)}>
-                        {year}
-                         </Button>
-                    })}
+                    <Row>
+                      <div className="App-filter-button-container">
+                        {uniqueLaunchYears.map(year => {
+                          return <Button className="App-filter-button"
+                            variant={this.state.filters.launch_year === year.toString() ? "success" : "outline-success"}
+                            value={year}
+                            onClick={e => this.updateApiFilters('launch_year', e.target.value)}>
+                            {year}
+                          </Button>
+                        })}
+                      </div>
+                    </Row>
 
-                    <Card.Text className="text-center">
+                    <Card.Text className="App-filter-heading">
                       Successful Launch
-                      <hr />
+                      <hr className="App-filters-hr" />
                     </Card.Text>
 
-                    <Button
-                      variant={this.state.filters.launch_success === "true" ? "success" : "outline-success"}
-                      onClick={e => this.updateApiFilters('launch_success', e.target.value)} value="true">
-                      True
-                    </Button>
-
-                    <Button
-                      variant={this.state.filters.launch_success === "false" ? "success" : "outline-success"}
-                      onClick={e => this.updateApiFilters('launch_success', e.target.value)} value="false">
-                      False
-                    </Button>
-
-                    <Card.Text className="text-center">
-                      Successful Landing
-                      <hr />
-                    </Card.Text>
-
-                    <Button 
-                      variant={this.state.filters.land_success === "true" ? "success" : "outline-success"} 
-                      onClick={e => this.updateApiFilters('land_success', e.target.value)} value="true">
+                    <div className="App-filter-button-container">
+                      <Button className="App-filter-button"
+                        variant={this.state.filters.launch_success === "true" ? "success" : "outline-success"}
+                        onClick={e => this.updateApiFilters('launch_success', e.target.value)} value="true">
                         True
                     </Button>
-                    
-                    <Button
-                      variant={this.state.filters.land_success === "false" ? "success" : "outline-success"}
-                      onClick={e => this.updateApiFilters('land_success', e.target.value)} value="false">
-                      False
+
+                      <Button className="App-filter-button"
+                        variant={this.state.filters.launch_success === "false" ? "success" : "outline-success"}
+                        onClick={e => this.updateApiFilters('launch_success', e.target.value)} value="false">
+                        False
+                    </Button>
+                    </div>
+
+                    <Card.Text className="App-filter-heading">
+                      Successful Landing
+                      <hr className="App-filters-hr" />
+                    </Card.Text>
+                    <div className="App-filter-button-container">
+                      <Button className="App-filter-button"
+                        variant={this.state.filters.land_success === "true" ? "success" : "outline-success"}
+                        onClick={e => this.updateApiFilters('land_success', e.target.value)} value="true">
+                        True
                     </Button>
 
-                    </Card.Body>
+                      <Button className="App-filter-button"
+                        variant={this.state.filters.land_success === "false" ? "success" : "outline-success"}
+                        onClick={e => this.updateApiFilters('land_success', e.target.value)} value="false">
+                        False
+                    </Button>
+                    </div>
+
+                  </Card.Body>
                 </Card>
               </Col>
 

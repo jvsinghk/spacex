@@ -26,6 +26,35 @@
   color: #61dafb;
 }
 
+.App-filter-header {
+  color: #111111;
+}
+
+.App-filter-heading {
+  text-align: center !important;
+  margin-top: 1rem;
+}
+
+.App-filter-heading-launch-year {
+  text-align: center !important;
+  margin-top: -1rem;
+}
+
+.App-filters-hr {
+  margin: 0.4rem;
+}
+
+.App-filter-button-container{
+  width:100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.App-filter-button {
+  flex: 0 50%;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
