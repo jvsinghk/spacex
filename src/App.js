@@ -39,18 +39,20 @@ class App extends Component {
           <div className="App">
             
             <ul>
-              {items.map(item => (
+              {items.map(item => { 
+console.log(item.rocket.first_stage.cores[0].land_success);
+return (
                   <li key={item.flight_number}>
                       Flight Number: {item.flight_number} |
                       Mission Id: {item.mission_id} | 
                       Mission Name: {item.mission_name} | 
                       Launch Year: {item.launch_year} | 
                       Successful Launch: {item.launch_success ? "true" : "false"} |
-                      Successful Landing: {item.land_success ? "true" : "false"} |
+                      Successful Landing: {item.rocket.first_stage.cores[0].land_success ? "true" : "false"} |
                       Image : <img src={item.links.mission_patch_small} alt="mission patch"/>
                   </li>
-              ))}
-            </ul>  
+              ); } )}
+            </ul> 
 
           </div>
         );
