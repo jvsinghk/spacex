@@ -4,7 +4,7 @@ import { Container, Card, Button, ListGroup, ListGroupItem, Row, Col } from 'rea
 import RocketLaunchDetails from './components/RocketLaunchDetails';
 import querystring from 'querystring';
 
-const API_BASE_URL = "https://api.spacexdata.com/v3/launches?";
+const API_BASE_URL = "https://api.spacexdata.com/v3/launches?limit=100";
 
 class App extends Component {
 
