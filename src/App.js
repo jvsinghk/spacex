@@ -41,7 +41,13 @@ class App extends Component {
             <ul>
               {items.map(item => (
                   <li key={item.flight_number}>
-                      Mission Name: {item.mission_name} | Launch Year: {item.launch_year}
+                      Flight Number: {item.flight_number} |
+                      Mission Id: {item.mission_id} | 
+                      Mission Name: {item.mission_name} | 
+                      Launch Year: {item.launch_year} | 
+                      Successful Launch: {item.launch_success ? "true" : "false"} |
+                      Successful Landing: {item.land_success ? "true" : "false"} |
+                      Image : <img src={item.links.mission_patch_small} alt="mission patch"/>
                   </li>
               ))}
             </ul>  
