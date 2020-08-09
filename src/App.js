@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Card, Button, ListGroup, ListGroupItem, Row, Col } from 'react-bootstrap';
+import { Container, Card, Button, Row, Col } from 'react-bootstrap';
 import RocketLaunchDetails from './components/RocketLaunchDetails';
 import querystring from 'querystring';
+import './App.css';
 
 const API_BASE_URL = "https://api.spacexdata.com/v3/launches?limit=100";
 
@@ -72,7 +73,7 @@ class App extends Component {
 
       return (
         <div className="App">
-          <h1>
+          <h1 className="App-header">
             SpaceX Launch Programs
             </h1>
           <Container fluid>
