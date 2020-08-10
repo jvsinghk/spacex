@@ -11,6 +11,22 @@ To run this project locally, run the following command  `npm start`, this will s
 
 This app is deployed on **Netlify** [Spacex-Launch-Programs](https://spacex-launch-programs.netlify.app/)
 
+### Approach
+1. Fetched Api data.
+2. Created basic structure of app components i.e filter and lanch details and parcessed fetch data in it .
+3  Added filter functionality on click for single and multiple use cases.
+4. Responsive design
+5. Debugging
+
+### Stack Details
+1. React framework
+2. React-bootstrap framework
+3. Languages - JavaScript, JSX, CSS, HTML
+4. Editor- Visual Studio Code
+5. Browser - Google Chrome
+6. Os- Windows
+7. Deployment - Netlify
+
 ## UI And Filter Implementation
 
 >Filters and Launch Items details cards having Spacex launch details fetched from API
