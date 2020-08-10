@@ -55,6 +55,10 @@ body{
   flex-wrap: wrap;
 }
 
+.App-Developer-name {
+  text-align: center !important;
+}
+
 .App-filter-button {
   flex: 0 50%;
 }

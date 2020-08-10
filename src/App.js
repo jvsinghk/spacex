@@ -150,8 +150,11 @@ class App extends Component {
                   })}
                 </Row>
               </Col>
-
             </Row>
+            <div>
+              <h5 className="App-Developer-name">Developed by : Jasvinder Singh</h5>
+            </div>
+
           </Container>
         </div>
       );
