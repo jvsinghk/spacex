@@ -15,17 +15,17 @@ function RocketLaunchDetails({ details }) {
             <div className="Rocket-mission-name-flight-number">
                 {mission_name} #{flight_number}
             </div>
-            <div className="Rocket-details-label">
-                Mission Id: {mission_id}
+            <div className="Rocket-detail-label">
+                Mission Id: <span className="Rocket-detail-value">{mission_id}</span>
             </div>
-            <div className="Rocket-details-label">
-                Launch Year: {launch_year}
+            <div className="Rocket-detail-label">
+                Launch Year: <span className="Rocket-detail-value">{launch_year}</span>
             </div>
-            <div className="Rocket-details-label">
-                Successful Launch: {launch_success ? "true" : "false"}
+            <div className="Rocket-detail-label">
+                Successful Launch: <span className="Rocket-detail-value">{launch_success ? "true" : "false"}</span>
             </div>
-            <div className="Rocket-details-label">
-                Successful Landing: {land_success ? "true" : "false"}
+            <div className="Rocket-detail-label">
+                Successful Landing: <span className="Rocket-detail-value">{land_success ? "true" : "false"}</span>
             </div>
         </div>
     </Card>);
