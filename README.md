@@ -45,5 +45,4 @@ This app is deployed on **Netlify** [Spacex-Launch-Programs](https://spacex-laun
 
 ![Alt text](https://ik.imagekit.io/eudv8cramv/Screenshot__1273__OetAvBQCL.png)
 
-
-### You can add or remove any filter in this app and get the details about SpaceX Launch Programs according to the Launch year, Succesuful Launch and Landing Success.
+Developed By Jasvinder Singh
