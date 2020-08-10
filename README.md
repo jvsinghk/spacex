@@ -11,23 +11,38 @@ To run this project locally, run the following command  `npm start`, this will s
 
 This app is deployed on **Netlify** [Spacex-Launch-Programs](https://spacex-launch-programs.netlify.app/)
 
+### Approach
+1. Fetched Api data.
+2. Created basic structure of app components i.e filter and lanch details and parcessed fetch data in it.
+3. Added filter functionality on click for single and multiple use cases.
+4. Responsive design
+5. Debugging
+
+### Stack Details
+1. React framework
+2. React-bootstrap framework
+3. Languages - JavaScript, JSX, CSS, HTML
+4. Editor- Visual Studio Code
+5. Browser - Google Chrome
+6. Os- Windows
+7. Deployment - Netlify
+
 ## UI And Filter Implementation
 
 >Filters and Launch Items details cards having Spacex launch details fetched from API
 
-![Alt text](https://ik.imagekit.io/eudv8cramv/Screenshot__1258__zxyK4XsSTL.png)
+![Alt text](https://ik.imagekit.io/eudv8cramv/Screenshot__1270__MvCD0C3w26.png)
 
 > After Applying Launch Year Filter
 
-![Alt text](https://ik.imagekit.io/eudv8cramv/Screenshot__1259__ufOb_alcaH.png)
+![Alt text](https://ik.imagekit.io/eudv8cramv/Screenshot__1271__wwcOOWXWmR.png)
 
 > After Applying Successful Launch Filter
 
-![Alt text](https://ik.imagekit.io/eudv8cramv/Screenshot__1260__WEv0sdwRPQ.png)
+![Alt text](https://ik.imagekit.io/eudv8cramv/Screenshot__1272__IQT1rCmyt.png)
 
 > After Applying Launch Year, Successful Launch and Landing Success Filter
 
-![Alt text](https://ik.imagekit.io/eudv8cramv/Screenshot__1261__vBXPg9IRK.png)
+![Alt text](https://ik.imagekit.io/eudv8cramv/Screenshot__1273__OetAvBQCL.png)
 
-
-### Note: You can add or remove any filter in this app and get the details about SpaceX Launch Programs according to the Launch year, Succesuful Launch and Landing Success.
+Developed By Jasvinder Singh

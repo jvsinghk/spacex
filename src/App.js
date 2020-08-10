@@ -4,6 +4,7 @@ import { Container, Card, Button, Row, Col } from 'react-bootstrap';
 import RocketLaunchDetails from './components/RocketLaunchDetails';
 import querystring from 'querystring';
 import './App.css';
+import load from './load.gif';
 
 const API_BASE_URL = "https://api.spacexdata.com/v3/launches?limit=100";
 
@@ -66,7 +67,11 @@ class App extends Component {
     const uniqueLaunchYears = new Array(14).fill(0).map((_, index) => 2006 + index);
 
     if (!isLoaded) {
-      return <div>Loading...</div>;
+      return <div className="App-loader-container">
+        <div className="App-loader-box">
+          <img src={load} alt="loading..." />
+        </div>
+      </div>
     }
 
     else {
