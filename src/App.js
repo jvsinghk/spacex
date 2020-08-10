@@ -141,13 +141,15 @@ class App extends Component {
                 </Card>
               </Col>
 
-
-              {data.map(details => {
-                return (<Col xs={12} sm={12} md={3} lg={3}>
-                  <RocketLaunchDetails details={details} />
-                </Col>
-                );
-              })}
+              <Col xs={12} sm={12} md={6} lg={9}>
+                <Row>
+                  {data.map(details => {
+                    return (<Col md={12} lg={4}>
+                      <RocketLaunchDetails details={details} />
+                    </Col>);
+                  })}
+                </Row>
+              </Col>
 
             </Row>
           </Container>
