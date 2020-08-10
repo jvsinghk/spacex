@@ -6,6 +6,18 @@ body{
   background-color: #F2F2F2;
 }
 
+.App-loader-container{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-loader-box{  
+  position: relative;
+  text-align: center;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
