@@ -13,19 +13,25 @@ This app is deployed on **Netlify** [Spacex-Launch-Programs](https://spacex-laun
 
 ### Approach
 1. Fetched Api data.
-2. Created basic structure of app components i.e filter and lanch details and parcessed fetch data in it.
+2. Created basic structure of app components i.e for filter and launch details and parcessed fetched data into it.
 3. Added filter functionality on click for single and multiple use cases.
-4. Responsive design
-5. Debugging
+4. Added Responsive design
+5. Created Documentation
+6. Testing and Debugging throughout
+7. Netlify Deployment
+
 
 ### Stack Details
-1. React framework
-2. React-bootstrap framework
-3. Languages - JavaScript, JSX, CSS, HTML
+1. React
+2. React-bootstrap 
+3. Languages - JavaScript, JSX, CSS
 4. Editor- Visual Studio Code
 5. Browser - Google Chrome
 6. Os- Windows
 7. Deployment - Netlify
+8. Tools - npm, babel,yarn
+9. Json parser to view API data
+
 
 ## UI And Filter Implementation
 
