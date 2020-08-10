@@ -16,7 +16,7 @@ function RocketLaunchDetails({ details }) {
                 {mission_name} #{flight_number}
             </div>
             <div className="Rocket-detail-label">
-                Mission Id: <span className="Rocket-detail-value">{mission_id}</span>
+                Mission Ids: <ul> <li className="Rocket-detail-value">{mission_id}</li></ul>
             </div>
             <div className="Rocket-detail-label">
                 Launch Year: <span className="Rocket-detail-value">{launch_year}</span>
