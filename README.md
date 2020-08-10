@@ -22,4 +22,4 @@ To run this project locally, run the following command npm start, this will star
 ### Filters and Launch Items details cards having Spacex lanch details fectched from api after applying all the filters
 
 
-### Note: You can and remove filter in this app and get the details about SpaceX Launch Proggrams according to the Launch year, Succesuful Launch and Landing Success
+### Note: You can add or remove any filter in this app and get the details about SpaceX Launch Proggrams according to the Launch year, Succesuful Launch and Landing Success.
