@@ -7,7 +7,7 @@ import ReactDomServer from 'react-dom/server';
 
 import App from '../src/App';
 
-const PORT = 8000;
+const PORT = 8010;
 
 const app = express();
 
