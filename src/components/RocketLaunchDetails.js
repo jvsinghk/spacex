@@ -10,7 +10,7 @@ function RocketLaunchDetails({ details }) {
     return (<Card className="Rocket-details-card">
         <div key={flight_number}>
             <div>
-                <img src={imgSrc} alt="mission patch" className="Rocket-mission-image"/>
+                <img src={imgSrc} alt="mission patch img not available on api" className="Rocket-mission-image"/>
             </div>
             <div className="Rocket-mission-name-flight-number">
                 {mission_name} #{flight_number}

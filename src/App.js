@@ -64,7 +64,7 @@ class App extends Component {
   render() {
 
     const { isLoaded, data } = this.state;
-    const uniqueLaunchYears = new Array(14).fill(0).map((_, index) => 2006 + index);
+    const uniqueLaunchYears = new Array(16).fill(0).map((_, index) => 2006 + index);
 
     if (!isLoaded) {
       return <div className="App-loader-container">
