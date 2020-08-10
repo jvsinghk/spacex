@@ -60,7 +60,8 @@ body{
 }
 
 .App-filter-button {
-  flex: 0 50%;
+  flex: 0 40%;
+  margin: 10px;
 }
 @keyframes App-logo-spin {
   from {
