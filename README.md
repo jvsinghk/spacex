@@ -7,6 +7,10 @@ To install, simply clone this repository & run the following command  `npm insta
 ## Running Project
 To run this project locally, run the following command  `npm start`, this will start a local instance of the application & you will be able to run the app in your browser at this url http://localhost:3000/.
 
+### Netlify Deployment
+
+This app is deployed on **Netlify** [Spacex-Launch-Programs](https://spacex-launch-programs.netlify.app/)
+
 ## UI And Filter Implementation
 
 >Filters and Launch Items details cards having Spacex launch details fetched from API
