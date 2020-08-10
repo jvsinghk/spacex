@@ -18,7 +18,6 @@ body{
 }
 
 .App-header {
-  min-height: 10vh;
   display: flex;
   flex-direction: column;
   font-size: calc(22px + 2vmin);
