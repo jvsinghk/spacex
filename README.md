@@ -21,7 +21,7 @@ To run this project locally, run the following command  `npm start`, this will s
 
 ![Alt text](https://ik.imagekit.io/eudv8cramv/Screenshot__1260__WEv0sdwRPQ.png)
 
-> After Applying Launch Year, Successfule Launch and Landing Success Filter
+> After Applying Launch Year, Successful Launch and Landing Success Filter
 
 ![Alt text](https://ik.imagekit.io/eudv8cramv/Screenshot__1261__vBXPg9IRK.png)
 
