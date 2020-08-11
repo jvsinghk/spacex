@@ -41,6 +41,11 @@ body{
   color: #61dafb;
 }
 
+.App-filter-card {
+  width: 18rem;
+  margin-bottom: 15px;
+}
+
 .App-filter-header {
   color: #111111;
 }

@@ -84,7 +84,7 @@ class App extends Component {
           <Container fluid>
             <Row>
               <Col xs={12} sm={12} md={6} lg={3}>
-                <Card style={{ width: '18rem' }}>
+                <Card className="App-filter-card">
                   <Card.Body>
                     <Card.Title className="App-filter-header">Filters</Card.Title>
                     <Card.Text className="App-filter-heading-launch-year">
