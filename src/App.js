@@ -77,13 +77,14 @@ class App extends Component {
     else {
 
       return (
-        <div className="App">
-          <h1 className="App-header">
-            SpaceX Launch Programs
-            </h1>
+        <div className="App">          
           <Container fluid>
+            <h1 className="App-header">
+              SpaceX Launch Programs
+            </h1>
             <Row>
-              <Col xs={12} sm={12} md={6} lg={3}>
+              <Col xs={15} sm={15} md={15} lg={15} >
+              <Col lg={3}>
                 <Card className="App-filter-card">
                   <Card.Body>
                     <Card.Title className="App-filter-header">Filters</Card.Title>
@@ -146,15 +147,16 @@ class App extends Component {
                 </Card>
               </Col>
 
-              <Col xs={12} sm={12} md={6} lg={9}>
+              <Col xs={12} sm={12} md={12} lg={12}>
                 <Row>
                   {data.map(details => {
-                    return (<Col md={12} lg={4}>
+                    return (<Col lg={4}>
                       <RocketLaunchDetails details={details} />
                     </Col>);
                   })}
                 </Row>
               </Col>
+            </Col>
             </Row>
             <div>
               <h5 className="App-Developer-name">Developed by : Jasvinder Singh</h5>

@@ -88,3 +88,45 @@ body{
     transform: rotate(360deg);
   }
 }
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.col-xs-15 {
+    width: 20%;
+    float: left;
+}
+@media only screen and (min-width: 768px) {
+.col-sm-15 {
+        width: 20%;
+        float: left;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .col-md-15 {
+        width: 20%;
+        float: left;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .col-lg-15 {
+        width: 20%;
+        float: left;
+    }
+}
+@media only screen and (max-width: 700px) {
+    /* ruleset for 700px */
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1024px) {
+    /* ruleset for 700px - 1024px */
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+    /* ruleset for 1024px - 1440px */
+}
