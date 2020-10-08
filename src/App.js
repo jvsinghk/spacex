@@ -4,7 +4,7 @@ import { Container, Card, Button, Row, Col } from 'react-bootstrap';
 import RocketLaunchDetails from './components/RocketLaunchDetails';
 import querystring from 'querystring';
 import './App.css';
-import load from './loadRocket.gif';
+import loader from './loadRocket.gif';
 
 const API_BASE_URL = "https://api.spacexdata.com/v3/launches?limit=100";
 
@@ -69,7 +69,7 @@ class App extends Component {
     if (!isLoaded) {
       return <div className="App-loader-container">
         <div className="App-loader-box">
-          <img src={load} alt="loading..." />
+          <img src={loader} alt="loading..." />
         </div>
       </div>
     }
@@ -78,15 +78,15 @@ class App extends Component {
 
       return (
         <div className="App">
-          <h1 className="App-header">
-            SpaceX Launch Programs
-            </h1>
+          <h1 className="App-header">SpaceX Launch Programs</h1>
           <Container fluid>
             <Row>
               <Col xs={12} sm={12} md={6} lg={3}>
                 <Card className="App-filter-card">
                   <Card.Body>
-                    <Card.Title className="App-filter-header">Filters</Card.Title>
+                    <Card.Title className="App-filter-header">
+                      Filters
+                    </Card.Title>
                     <Card.Text className="App-filter-heading-launch-year">
                       Launch Year
                       <hr className="App-filters-hr" />
@@ -94,13 +94,27 @@ class App extends Component {
 
                     <Row>
                       <div className="App-filter-button-container">
-                        {uniqueLaunchYears.map(year => {
-                          return <Button className="App-filter-button"
-                            variant={this.state.filters.launch_year === year.toString() ? "success" : "outline-success"}
-                            value={year}
-                            onClick={e => this.updateApiFilters('launch_year', e.target.value)}>
-                            {year}
-                          </Button>
+                        {uniqueLaunchYears.map((year) => {
+                          return (
+                            <Button
+                              className="App-filter-button"
+                              variant={
+                                this.state.filters.launch_year ===
+                                year.toString()
+                                  ? "success"
+                                  : "outline-success"
+                              }
+                              value={year}
+                              onClick={(e) =>
+                                this.updateApiFilters(
+                                  "launch_year",
+                                  e.target.value
+                                )
+                              }
+                            >
+                              {year}
+                            </Button>
+                          );
                         })}
                       </div>
                     </Row>
@@ -111,17 +125,41 @@ class App extends Component {
                     </Card.Text>
 
                     <div className="App-filter-button-container">
-                      <Button className="App-filter-button"
-                        variant={this.state.filters.launch_success === "true" ? "success" : "outline-success"}
-                        onClick={e => this.updateApiFilters('launch_success', e.target.value)} value="true">
+                      <Button
+                        className="App-filter-button"
+                        variant={
+                          this.state.filters.launch_success === "true"
+                            ? "success"
+                            : "outline-success"
+                        }
+                        onClick={(e) =>
+                          this.updateApiFilters(
+                            "launch_success",
+                            e.target.value
+                          )
+                        }
+                        value="true"
+                      >
                         True
-                    </Button>
+                      </Button>
 
-                      <Button className="App-filter-button"
-                        variant={this.state.filters.launch_success === "false" ? "success" : "outline-success"}
-                        onClick={e => this.updateApiFilters('launch_success', e.target.value)} value="false">
+                      <Button
+                        className="App-filter-button"
+                        variant={
+                          this.state.filters.launch_success === "false"
+                            ? "success"
+                            : "outline-success"
+                        }
+                        onClick={(e) =>
+                          this.updateApiFilters(
+                            "launch_success",
+                            e.target.value
+                          )
+                        }
+                        value="false"
+                      >
                         False
-                    </Button>
+                      </Button>
                     </div>
 
                     <Card.Text className="App-filter-heading">
@@ -129,37 +167,57 @@ class App extends Component {
                       <hr className="App-filters-hr" />
                     </Card.Text>
                     <div className="App-filter-button-container">
-                      <Button className="App-filter-button"
-                        variant={this.state.filters.land_success === "true" ? "success" : "outline-success"}
-                        onClick={e => this.updateApiFilters('land_success', e.target.value)} value="true">
+                      <Button
+                        className="App-filter-button"
+                        variant={
+                          this.state.filters.land_success === "true"
+                            ? "success"
+                            : "outline-success"
+                        }
+                        onClick={(e) =>
+                          this.updateApiFilters("land_success", e.target.value)
+                        }
+                        value="true"
+                      >
                         True
-                    </Button>
+                      </Button>
 
-                      <Button className="App-filter-button"
-                        variant={this.state.filters.land_success === "false" ? "success" : "outline-success"}
-                        onClick={e => this.updateApiFilters('land_success', e.target.value)} value="false">
+                      <Button
+                        className="App-filter-button"
+                        variant={
+                          this.state.filters.land_success === "false"
+                            ? "success"
+                            : "outline-success"
+                        }
+                        onClick={(e) =>
+                          this.updateApiFilters("land_success", e.target.value)
+                        }
+                        value="false"
+                      >
                         False
-                    </Button>
+                      </Button>
                     </div>
-
                   </Card.Body>
                 </Card>
               </Col>
 
               <Col xs={12} sm={12} md={6} lg={9}>
                 <Row>
-                  {data.map(details => {
-                    return (<Col md={12} lg={4}>
-                      <RocketLaunchDetails details={details} />
-                    </Col>);
+                  {data.map((details) => {
+                    return (
+                      <Col md={12} lg={4}>
+                        <RocketLaunchDetails details={details} />
+                      </Col>
+                    );
                   })}
                 </Row>
               </Col>
             </Row>
             <div>
-              <h5 className="App-Developer-name">Developed by : Jasvinder Singh</h5>
+              <h5 className="App-Developers-name">
+                Developed by : Jasvinder Singh, Jennifer B 
+              </h5>
             </div>
-
           </Container>
         </div>
       );
